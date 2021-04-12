@@ -279,7 +279,7 @@ a.effect-underline:hover:after {
 }
 
 #carouselProject, #carouselProjectCms,
-#carouselReti {
+#carouselReti, #carouselDataBrain {
     height: 250px;
 }
 
@@ -803,6 +803,11 @@ a.effect-underline:hover:after {
 /* PROJECT TAB MACBOOK */
 .tab-content .tab-content-title, .tab-content .tab-content-text {
     color: midnightblue;
+
+}
+
+.tab-content .tab-content-text {
+    line-height: 30px;
 }
 
 .window {
