@@ -58,3 +58,29 @@ $().ready(function () {
     },
   });
 });
+
+$(window).scroll(function () {
+  var scroll = $(window).scrollTop();
+  var service = $("#service").offset().top;
+  var reason = $("#reason").offset().top;
+  var project = $("#project").offset().top;
+  if (scroll >= service - 20 && scroll < reason) {
+    // REMOVE OTHER CLASS
+    // $("#reason").children("#left-reason,#right-reason");
+    // console.log($("#reason .container").children());
+    // ADD SECTIONCLASS
+    $("#service-left").removeClass("slide-out-left");
+    $("#service-left").addClass("slide-in-left");
+    $("#service-right").removeClass("slide-out-right");
+    $("#service-right").addClass("slide-in-right");
+    $("#animate-title-service").removeClass("tracking-out-contract");
+    $("#animate-title-service").addClass("tracking-in-expand");
+  } else if (scroll >= reason - 20 && scroll < project) {
+    $(".left-reason").removeClass("slide-out-left");
+    $(".left-reason").addClass("slide-in-left");
+    $(".right-reason").removeClass("slide-out-right");
+    $(".right-reason").addClass("slide-in-right");
+    $("#animation-title-reason").removeClass("tracking-out-contract");
+    $("#animation-title-reason").addClass("tracking-in-expand");
+  }
+}); //missing );
