@@ -353,6 +353,10 @@ a.effect-underline:hover:after {
     color: midnightblue;
 }
 
+.section-title {
+    font-weight: 600;
+}
+
 #contact form {
     /* width: 80%;
       margin: auto; */
@@ -366,7 +370,7 @@ a.effect-underline:hover:after {
     border-radius: 6px;
     background: #f7f7f7;
     border: unset;
-    height: 70px;
+    height: 60px;
     outline: unset;
 }
 
@@ -462,12 +466,12 @@ a.effect-underline:hover:after {
 }
 
 .footer-content .footer-content-title {
-    color: #fa8c1e;
+    color: #ffffff;
     font-weight: 600;
     text-transform: uppercase;
 }
 
-.footer-content .footer-content-item {
+.footer-content-item {
     color: #ffffff;
     cursor: pointer;
 }
@@ -504,7 +508,6 @@ a.effect-underline:hover:after {
 
 .service-footer li {
     margin-bottom: 20px;
-    pointer-events: none;
 }
 
 .service-footer img {
@@ -513,8 +516,7 @@ a.effect-underline:hover:after {
 }
 
 .btn-outline-secondary:hover {
-    background-color: #ce2727;
-    border-color: #ce2727;
+    color: #ffffff;
 }
 
 @media (max-width: 500px) {
