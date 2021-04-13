@@ -285,7 +285,8 @@ a.effect-underline:hover:after {
 #carouselProject,
 #carouselProjectCms,
 #carouselReti,
-#carouselDataBrain {
+#carouselDataBrain,
+#carouselKhaiHoan{
   height: 250px;
 }
 
